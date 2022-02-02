@@ -1,4 +1,39 @@
 •What is a gitignore file and what should it include for a Java project?
+- The gitignore file is used by git to ignore particular files and changes to these files.
+- For example when working on a project you install a number of packages and dependency files which are not needed to 
+- store in a repository. We mention all such files in gitignore file.
+----For a Java Project-----
+*.class
+*.zip
+*.war
+*.rar
+*.log
+*.ctxt
+*.jar
+*.ear
+are some of the extentions which we put in a ignore file
 •What does fast-forward in Git mean?
+
+It is one of the Merging technics used by git.
+Here The git moves the source branch pointer directly to the target branch pointer without an extra merge commit
+It works when there is a linear relationship between source and target branch.
+-- ref : https://www.atlassian.com/git/tutorials/using-branches/git-merge
+-- ref : https://www.tutorialspoint.com/what-is-a-fast-forward-merge-in-git#:~:text=Fast%20forward%20merge%20can%20be,creating%20an%20extra%20merge%20commit.
+
+
 •Why should you have different branches?
+The main reason for having branches is to avoid disrupting a running software.
+When we work in a team it is convenient and safe to work on individual branches and then merge to the original main branch.
+These advantages can be applied to college projects like ours. But when we are working on live project The branching technique offers
+a wide range of advantages such as follows
+- Maintaining different versions/release
+- Different Environment setups
+- Tracking changes and easily reverting to running code
+- Bug fixes
+
+
 •In a project how many remote Git repositories do you usually have?
+
+Generally there is a Single repository for a single project. The goal of version control tools like is so that we can a single source of repository
+for our software projects. This single source can be further branch further according to need and usage. There is no point of making multiple repositories for 
+a single project as the purpose of version control itself is to keep track of files and Maintaining a single source code.
